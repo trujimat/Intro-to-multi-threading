@@ -1,6 +1,8 @@
+// A simple example to showcasing threads
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h> //Header file for sleep(). man 3 sleep for details.
+#include <unistd.h>
 #include <pthread.h>
 
 void *example_function()
