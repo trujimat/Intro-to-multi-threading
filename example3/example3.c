@@ -5,7 +5,6 @@
 #include <unistd.h>
 #include <pthread.h>
 
-pthread_mutex_t lock;
 int primes[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29};
 int total_sum = 0;
 
@@ -21,7 +20,6 @@ void *add_routine(void *arg)
 
 int main()
 {
-    pthread_mutex_init(&lock, NULL);
     pthread_t th[2];
 
     for (int i = 0; i < 2; i++)
